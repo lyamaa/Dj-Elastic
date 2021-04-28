@@ -40,7 +40,7 @@ class Publisher(models.Model):
         return self.name
 
     @property
-    def loaction_field_indexing(self):
+    def location_field_indexing(self):
 
         return {"lat": self.latitiude, "lon": self.longitude}
 
