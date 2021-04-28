@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "dj-elastic"
+version = "0.1.0"
+description = ""
+authors = ["surajmt8848 <suraj8848mt@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+black = "^21.4b1"
+isort = "^5.8.0"
+Django = "^3.2"
+djangorestframework = "^3.12.4"
+Pillow = "^8.2.0"
+django-elasticsearch-dsl-drf = "^0.22"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
