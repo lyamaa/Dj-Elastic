@@ -72,6 +72,18 @@ argon2 = ["argon2-cffi (>=19.1.0)"]
 bcrypt = ["bcrypt"]
 
 [[package]]
+name = "django-debug-toolbar"
+version = "3.2.1"
+description = "A configurable set of panels that display various debug information about the current request/response."
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.dependencies]
+Django = ">=2.2"
+sqlparse = ">=0.2.0"
+
+[[package]]
 name = "django-elasticsearch-dsl"
 version = "7.2.0"
 description = "Wrapper around elasticsearch-dsl-py for django models"
@@ -259,7 +271,7 @@ brotli = ["brotlipy (>=0.6.0)"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "526b9666b240488b458e2b1ceb996fe2a34822800f40c24bc878ac7b5e18ce79"
+content-hash = "b75e1cf97c827a2c141f5b9db74aac1b778c8b7aaf765876fe8a2a1a8e0605a4"
 
 [metadata.files]
 appdirs = [
@@ -285,6 +297,10 @@ click = [
 django = [
     {file = "Django-3.2-py3-none-any.whl", hash = "sha256:0604e84c4fb698a5e53e5857b5aea945b2f19a18f25f10b8748dbdf935788927"},
     {file = "Django-3.2.tar.gz", hash = "sha256:21f0f9643722675976004eb683c55d33c05486f94506672df3d6a141546f389d"},
+]
+django-debug-toolbar = [
+    {file = "django-debug-toolbar-3.2.1.tar.gz", hash = "sha256:a5ff2a54f24bf88286f9872836081078f4baa843dc3735ee88524e89f8821e33"},
+    {file = "django_debug_toolbar-3.2.1-py3-none-any.whl", hash = "sha256:e759e63e3fe2d3110e0e519639c166816368701eab4a47fed75d7de7018467b9"},
 ]
 django-elasticsearch-dsl = [
     {file = "django-elasticsearch-dsl-7.2.0.tar.gz", hash = "sha256:f9163ffe314a0562f00789d34cc923332e1d51236bf7d5a38bfa8ea72399ceac"},

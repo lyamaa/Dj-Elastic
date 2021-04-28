@@ -51,7 +51,7 @@ class Author(models.Model):
     salutation = models.CharField(_("Salutation"), max_length=255)
     name = models.CharField(_("Author Name"), max_length=255)
     email = models.EmailField(_("Author Email"), max_length=255)
-    avatar = models.ImageField(_("Author Image"), upload_to="author/", height_field=100, width_field=100)
+    avatar = models.ImageField(_("Author Image"), upload_to="author", null=True, blank=True)
 
     class Meta:
         ordering = ["id"]
